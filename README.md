@@ -1,3 +1,5 @@
+<img width="1696" height="2528" alt="Gemini_Generated_Image_1uwdq71uwdq71uwd" src="https://github.com/user-attachments/assets/dcfe9bbc-e337-46a9-9e88-41b15de45123" />
+
 # Photo Booth untuk Windows (Terinsipirasi oleh MacOS PhotoBooth)
 
 Aplikasi WPF native (.NET 8) + OpenCvSharp.
