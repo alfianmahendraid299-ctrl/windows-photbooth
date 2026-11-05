@@ -1,4 +1,4 @@
-# Photo Booth untuk Windows (klon Photo Booth macOS)
+# Photo Booth untuk Windows (Terinsipirasi oleh MacOS PhotoBooth)
 
 Aplikasi WPF native (.NET 8) + OpenCvSharp.
 
