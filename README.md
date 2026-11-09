@@ -1,8 +1,15 @@
+
+
 <img width="1696" height="2528" alt="Gemini_Generated_Image_1uwdq71uwdq71uwd" src="https://github.com/user-attachments/assets/dcfe9bbc-e337-46a9-9e88-41b15de45123" />
 
 # Photo Booth untuk Windows (Terinsipirasi oleh MacOS PhotoBooth)
 
 Aplikasi WPF native (.NET 8) + OpenCvSharp.
+
+# Update V1.0.2 
+New Facemoji 3D 
+<img width="1280" height="720" alt="Photo_20261109_090907" src="https://github.com/user-attachments/assets/0e2df7d1-5dc1-4866-a4b9-da066136862a" />
+<img width="1280" height="720" alt="Photo_20261109_091027" src="https://github.com/user-attachments/assets/6af5b248-cb81-4241-b54a-36ba7638b5ce" />
 
 ## Cara menjalankan
 
