@@ -16,7 +16,7 @@ Aplikasi WPF native (.NET 8) + OpenCvSharp.
 3. Untuk membuat file .exe yang bisa dibagikan:
 
    ```
-   dotnet publish -c Release -r win-x64 --self-contained -p:PublishSingleFile=true
+   dotnet publish -c Release -r win-x64 --self-contained true -o publish
    ```
 
    Hasilnya ada di `bin\Release\net8.0-windows\win-x64\publish\`.
