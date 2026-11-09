@@ -13,6 +13,7 @@ namespace PhotoBooth;
 public sealed class FaceData
 {
     public Vector2[] P = Array.Empty<Vector2>();
+    public bool Preview;            // true = salinan kecil untuk pratinjau tile (tanpa mengubah status animasi)
     public float[] Zraw = Array.Empty<float>();   // kedalaman mentah dari model
     public Vector2 EyeA, EyeB;      // pusat iris; A = yang lebih kiri di layar
     public Vector2 U, V;            // sumbu wajah: U sepanjang garis mata, V ke bawah
@@ -84,7 +85,9 @@ public sealed class FaceData
         var zz = new float[Zraw.Length];
         for (int i = 0; i < q.Length; i++) q[i] = P[i] * k;
         for (int i = 0; i < zz.Length; i++) zz[i] = Zraw[i] * k;
-        return From(q, zz);
+        var r = From(q, zz);
+        r.Preview = true;
+        return r;
     }
 
     public Vector2 Mid(int a, int b) => (P[a] + P[b]) * 0.5f;

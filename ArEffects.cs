@@ -44,6 +44,13 @@ public static class ArEffects
         var dst = src.Clone();
         if (face == null || face.P.Length < 468) return dst;
 
+        // karakter 3D (Facemoji): menggantikan wajah dengan karakter yang ikut ekspresi & gerak kepala
+        if (Facemoji.Supports(kind))
+        {
+            Facemoji.Render(dst, face, kind);
+            return dst;
+        }
+
         double t = Stopwatch.GetTimestamp() / (double)Stopwatch.Frequency;
         float w = face.FaceW;
 

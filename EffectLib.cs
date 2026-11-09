@@ -24,6 +24,10 @@ public enum EffectKind
     Hulk, LaserEyes, Fire, Bats, Butterflies, LoveRain, Dizzy, Googly, Pinocchio,
     // Halaman 8: AR spesial
     Lightning, Frozen, Vampire, Zombie, Terminator, FireBreath, Visor, Ninja, Astronaut,
+    // Halaman 9: Facemoji 3D (hewan)
+    FmBear, FmCat, FmDog, FmFox, FmBunny, FmPanda, FmPig, FmMonkey, FmLion,
+    // Halaman 10: Facemoji 3D (karakter)
+    FmFrog, FmAlien, FmRobot, FmGhost, FmUnicorn, FmSkull, FmChicken, FmKoala, FmDino,
 }
 
 public sealed record EffectDef(EffectKind Kind, string Name, bool NeedsFace);
@@ -36,6 +40,7 @@ public static class EffectLib
     {
         "Filter", "Filter Seni", "AR · Hewan & Aksesori", "AR · Wajah", "AR · Karakter",
         "Filter Lensa", "AR · Aksi & Emosi", "AR · Spesial",
+        "Facemoji 3D · Hewan", "Facemoji 3D · Karakter",
     };
 
     public static readonly EffectDef[] All =
@@ -87,6 +92,18 @@ public static class EffectLib
         new(EffectKind.Terminator, "Terminator", true), new(EffectKind.FireBreath, "Napas Api", true),
         new(EffectKind.Visor, "Visor Cyber", true), new(EffectKind.Ninja, "Ninja", true),
         new(EffectKind.Astronaut, "Astronot", true),
+
+        new(EffectKind.FmBear, "Beruang 3D", true), new(EffectKind.FmCat, "Kucing 3D", true),
+        new(EffectKind.FmDog, "Anjing 3D", true), new(EffectKind.FmFox, "Rubah 3D", true),
+        new(EffectKind.FmBunny, "Kelinci 3D", true), new(EffectKind.FmPanda, "Panda 3D", true),
+        new(EffectKind.FmPig, "Babi 3D", true), new(EffectKind.FmMonkey, "Monyet 3D", true),
+        new(EffectKind.FmLion, "Singa 3D", true),
+
+        new(EffectKind.FmFrog, "Katak 3D", true), new(EffectKind.FmAlien, "Alien 3D", true),
+        new(EffectKind.FmRobot, "Robot 3D", true), new(EffectKind.FmGhost, "Hantu 3D", true),
+        new(EffectKind.FmUnicorn, "Unicorn 3D", true), new(EffectKind.FmSkull, "Tengkorak 3D", true),
+        new(EffectKind.FmChicken, "Ayam 3D", true), new(EffectKind.FmKoala, "Koala 3D", true),
+        new(EffectKind.FmDino, "Dino 3D", true),
     };
 
     static readonly Dictionary<EffectKind, EffectDef> ByKind = All.ToDictionary(e => e.Kind);
